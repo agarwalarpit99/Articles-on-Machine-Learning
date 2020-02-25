@@ -1,0 +1,22 @@
+In this ML series will be focused on explaining or discussing varios Machine Learning concepts .This series is for sharing my knowlegde to others as well as learning from others .
+“TELL ME AND I FORGET. TEACH ME AND I REMEMBER. INVOLVE ME AND I LEARN.” –BENJAMIN FRANKLIN
+
+Cross Validation and its Types:
+Cross validation:: It is a technique in which you reserve a particular sample or portion of dataset and training the model excluding this sample and then use this portion used for validation of model.
+
+There are mainly three types of cross validation:
+
+Hold out cross validation
+Leave one out cross validation
+K fold cross validation
+Hold out cross validation : It is the moslty used cross validation, in this we train our model on 70% of the dataset and then test on remaining 30% of the dataset (ratio can be change accordingly). The major drawback of the validation is that we are leaving some interesting information about data which make it higher bias.
+
+Leave one out cross validation: It is better the Hold out cross validation ,in this validation we reserve only one data sample or data point and train our model on rest of the data.This process iterates for each data point i.e K=N.
+
+The major drawback of this technique is that it is time consuming and our prediction can influenced with outliers in data or in data point.
+
+K fold cross validation: It is one of the best validation technique . In this technique we divide the dataset into a several chuck or folds (let say 5 folds) and in each iteration 4 folds are used for training data and the remaining fold i.e 1 is used for validations .This process continious for every iteration till each fold is used for validation set.
+
+Value of k can be choose wisely, if value of k is small it leads to Hold out cross validation and if its large it leads to Leave one out cross validation.
+
+Thanks :)
